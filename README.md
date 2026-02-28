@@ -1,3 +1,6 @@
+# nidhi-interior
+nidhi-interior
+
 # Nidhi Interior Decor — React App 🏢✨
 
 Premium corporate & home interior design company based in **Hyderabad, Telangana**. Pan India services.
