@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 node_modules/
 build/
 .env
 .env.local
 .DS_Store
+=======
+node_modules
+>>>>>>> 50b3c45 (Initial commit)

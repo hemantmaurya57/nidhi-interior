@@ -1,6 +1,3 @@
-# nidhi-interior
-nidhi-interior
-
 # Nidhi Interior Decor — React App 🏢✨
 
 Premium corporate & home interior design company based in **Hyderabad, Telangana**. Pan India services.
@@ -11,59 +8,72 @@ Premium corporate & home interior design company based in **Hyderabad, Telangana
 npm install
 npm start
 ```
-Open [http://localhost:3000](http://localhost:3000)
+
+Open http://localhost:3000
+
+## ✨ What's New (Redesign)
+
+This redesign is inspired by [interiainfrastructure.in](https://interiainfrastructure.in/) and includes:
+
+- **Hero Slider** — Full-screen auto-cycling image slider with Ken Burns effect, stats bar, and slide dots
+- **Marquee Strip** — Animated service keyword scroll under the hero
+- **Services Grid** — Hover-animated service cards with bottom accent line
+- **About Split** — Two-column layout with badge overlay
+- **Process Steps** — Numbered 5-step process on dark gradient background
+- **Portfolio Grid** — Masonry-style grid with hover overlays and category filters
+- **Client Logos** — Trust bar with well-known brand names
+- **Testimonials** — Cards with large quote mark and author details
+- **Blog Section** — Card grid with thumbnail, tag, date, and read-more
+- **CTA Banner** — Bold call-to-action with phone number
+- **Scroll-to-Top** — Fixed floating button
+- **Mobile Responsive** — Full responsive across all breakpoints
 
 ## 📁 Project Structure
 
 ```
 src/
 ├── components/
-│   ├── Navbar.js       # Sticky navbar with scroll effect + mobile menu
-│   └── Footer.js       # Rich footer with contact info
+│   ├── Navbar.js         # Sticky navbar with transparent-to-dark scroll + mobile menu
+│   └── Footer.js         # Rich 4-column footer with contact info and social links
 ├── pages/
-│   ├── Home.js          # Landing page – hero, corporate services, process, portfolio teaser
-│   ├── Corporate.js     # Full corporate services page (primary focus)
-│   ├── HomeInterior.js  # Residential interiors (secondary offering)
-│   ├── Portfolio.js     # Filterable project gallery
-│   ├── About.js         # Company story, values, team
-│   ├── Contact.js       # Contact form + office info
-│   └── Quote.js         # Detailed quote/inquiry form
-├── App.js               # React Router v6 routes
-├── index.js             # Entry point
-└── index.css            # Full design system (gold + charcoal + ivory)
+│   ├── Home.js           # Landing page — hero slider, services, about, process, portfolio, blogs, CTA
+│   ├── Corporate.js      # Full corporate services (primary offering)
+│   ├── HomeInterior.js   # Residential interiors (secondary offering)
+│   ├── Portfolio.js      # Filterable project gallery with stats
+│   ├── About.js          # Company story, values, team, stats
+│   ├── Contact.js        # Contact form + office info cards
+│   └── Quote.js          # 2-step project inquiry form
+├── App.js                # React Router v6 routes + ScrollToTop
+├── index.js              # Entry point
+└── index.css             # Full design system (navy + gold + ivory)
 ```
 
 ## 🎨 Design System
 
-- **Primary Font**: Cormorant Garamond (display headings)
-- **Body Font**: Outfit (clean, modern body text)
-- **Color Palette**:
-  - Gold: `#C8A96E` — accents, CTAs
-  - Charcoal: `#1C1C1E` — dark sections, navbar
-  - Ivory: `#F7F4EF` — light section backgrounds
-- **Aesthetic**: Luxury editorial, refined minimal
+| Token | Value | Use |
+|-------|-------|-----|
+| `--primary` | `#1a2744` | Navy — Navbar, dark backgrounds, headings |
+| `--accent` | `#c9a84c` | Gold — CTAs, accents, highlights |
+| `--light` | `#f5f6fa` | Light grey — section backgrounds |
+| `--muted` | `#7a7f9a` | Body text, descriptions |
 
-## 🔄 Pages & Routes
-
-| Route | Page | Focus |
-|---|---|---|
-| `/` | Home | Overview, corporate hero, key services |
-| `/corporate` | Corporate | Primary service — offices, co-working, retail, healthcare, hospitality, BFSI |
-| `/home-interior` | Home Interiors | Secondary offering — luxury residential |
-| `/portfolio` | Portfolio | Filterable gallery (Corporate/Residential/Retail/Healthcare/Hospitality) |
-| `/about` | About | Story, values, team |
-| `/contact` | Contact | Contact form + office locations |
-| `/quote` | Get Quote | Full project inquiry form |
-
-## 🏢 About the Company
-
-**Nidhi Interior Decor** is a Hyderabad-based interior design firm founded in 2009.
-- **Primary**: Corporate interiors (IT offices, co-working, retail, healthcare, hospitality, BFSI)
-- **Secondary**: Premium residential interiors (full homes, villas)
-- **Scale**: 500+ projects, 24 cities, 90+ team members
+**Fonts:** Playfair Display (headings) + DM Sans (body)
 
 ## 📸 Images
 
-Images are loaded from [Unsplash](https://unsplash.com) via CDN. To replace with real project photos:
+All images are loaded from [Unsplash](https://unsplash.com) via CDN. Replace with actual project photos:
+
 1. Add images to `/public/images/`
-2. Update `UNSPLASH()` references in each page to `process.env.PUBLIC_URL + '/images/your-image.jpg'`
+2. Update image `src` URLs in each page file
+
+## 🔄 Pages & Routes
+
+| Route | Page |
+|-------|------|
+| `/` | Home — full landing page |
+| `/corporate` | Corporate services |
+| `/home-interior` | Residential interiors |
+| `/portfolio` | Filterable gallery |
+| `/about` | Company story + team |
+| `/contact` | Contact form + offices |
+| `/quote` | 2-step project inquiry |
