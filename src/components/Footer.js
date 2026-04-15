@@ -10,8 +10,8 @@ export default function Footer() {
             <span className="tagline-text">Decor & Design Studio</span>
             <p>
               We are passionate about crafting workspaces and homes that breathe excellence
-              in design, beauty, and ergonomics. Founded in 2009, serving Pan India with
-              500+ successful projects.
+              in design, beauty, and ergonomics. Founded in 2009, serving Hyderabad with
+              35 successful projects.
             </p>
             <div className="footer-socials">
               {['f', 'in', 'ig', '▶'].map((s, i) => (

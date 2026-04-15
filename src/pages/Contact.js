@@ -67,16 +67,10 @@ export default function Contact() {
                 <div className="info-icon">📍</div>
                 <div>
                   <h4>Hyderabad Office</h4>
-                  <p>4th Floor, Krishe Sapphire, Hitech City Main Road, Madhapur, Hyderabad – 500081</p>
+                  <p>2nd Floor, Dallas Center, Hitech City Main Road, Madhapur, Hyderabad – 500081</p>
                 </div>
               </div>
-              <div className="info-card">
-                <div className="info-icon">📍</div>
-                <div>
-                  <h4>Bengaluru Office</h4>
-                  <p>No. 16, 13th A Cross, Prakruthi Layout, Kalyan Nagar, Bengaluru – 560043</p>
-                </div>
-              </div>
+              
               <div className="info-card">
                 <div className="info-icon">📞</div>
                 <div>

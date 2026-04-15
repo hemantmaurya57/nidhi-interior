@@ -1,12 +1,8 @@
 import { Link } from 'react-router-dom';
 
 const TEAM = [
-  { name: 'Nidhi Sharma', role: 'Founder & Creative Director', initial: 'N' },
-  { name: 'Arjun Mehta', role: 'Head of Corporate Design', initial: 'A' },
-  { name: 'Priya Reddy', role: 'Senior Architect', initial: 'P' },
-  { name: 'Kiran Babu', role: 'MEP Project Lead', initial: 'K' },
-  { name: 'Sneha Patel', role: 'Residential Design Head', initial: 'S' },
-  { name: 'Vikram Nair', role: 'Business Development', initial: 'V' },
+  { name: 'Dinesh Sharma', role: 'Founder & Creative Director', initial: 'N' } 
+ 
 ];
 
 const VALUES = [
@@ -42,7 +38,7 @@ export default function About() {
               <p style={{ color: 'var(--muted)', fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
                 Nidhi Interior Decor was founded in 2009 with a single belief: that great design changes
                 how people feel and perform. Starting with a small team in Hyderabad, we've grown into
-                a 90+ member studio serving clients across 24 Indian cities.
+                a 45-member studio serving clients in Hyderabad.
               </p>
               <p style={{ color: 'var(--muted)', fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
                 Our primary strength lies in corporate interiors — IT offices, co-working spaces, retail
@@ -73,7 +69,7 @@ export default function About() {
       <section className="section-sm" style={{ background: 'var(--gradient)' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px' }}>
-            {[['500+', 'Projects'], ['24', 'Cities'], ['15+', 'Years'], ['90+', 'Team Members']].map(([num, label]) => (
+            {[['35', 'Projects'], ['1', 'City'], ['2+', 'Years'], ['45', 'Team Members']].map(([num, label]) => (
               <div key={label} style={{ textAlign: 'center', padding: '32px 0' }}>
                 <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '44px', fontWeight: 700, color: 'var(--accent)' }}>{num}</div>
                 <div style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 500, marginTop: '4px' }}>{label}</div>
@@ -124,7 +120,7 @@ export default function About() {
       {/* ── CTA ── */}
       <section className="cta-banner">
         <div style={{ position: 'relative', zIndex: 1 }}>
-          <h2>Join 500+ Happy Clients</h2>
+          <h2>Join 35 Happy Clients</h2>
           <p>Let's design your next great space together.</p>
           <Link to="/quote" className="btn btn-primary">Start a Project →</Link>
         </div>

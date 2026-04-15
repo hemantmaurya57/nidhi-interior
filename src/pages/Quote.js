@@ -78,13 +78,13 @@ export default function Quote() {
                     </div>
                     <div className="form-group">
                       <label>Company / Organization</label>
-                      <input type="text" placeholder="Acme Corp Pvt Ltd" value={form.company} onChange={e => update('company', e.target.value)} />
+                      <input type="text" placeholder="Ikeva Pvt Ltd" value={form.company} onChange={e => update('company', e.target.value)} />
                     </div>
                   </div>
                   <div className="form-row">
                     <div className="form-group">
                       <label>Email *</label>
-                      <input type="email" placeholder="rajiv@acme.com" required value={form.email} onChange={e => update('email', e.target.value)} />
+                      <input type="email" placeholder="hello@ikeva.com" required value={form.email} onChange={e => update('email', e.target.value)} />
                     </div>
                     <div className="form-group">
                       <label>Phone Number *</label>

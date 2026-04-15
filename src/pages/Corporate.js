@@ -119,16 +119,16 @@ export default function Corporate() {
               <span className="section-label">Why Nidhi Interior</span>
               <h2 className="section-title">What Sets Us Apart</h2>
               <p style={{ color: 'var(--muted)', fontSize: '16px', lineHeight: 1.8, marginBottom: '24px' }}>
-                With 15+ years of experience and 500+ projects delivered, we bring unmatched expertise
-                in corporate interior design across India. Our in-house team handles everything —
+                With 2+ years of experience and 35 projects delivered, we bring focused expertise
+                in corporate interior design for Hyderabad clients. Our in-house team handles everything —
                 design, construction, MEP, and furniture — ensuring seamless delivery.
               </p>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '32px' }}>
                 {[
                   ['🏆', 'ISO 9001 Certified'],
                   ['⏱️', 'On-Time Delivery'],
-                  ['🌍', '24 Cities Served'],
-                  ['👥', '90+ In-House Team'],
+                  ['🌍', '1 City Served'],
+                  ['👥', '45 In-House Team'],
                   ['🔧', 'Full Turnkey Service'],
                   ['📋', 'Transparent Billing'],
                 ].map(([icon, label]) => (

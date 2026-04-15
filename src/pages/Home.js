@@ -18,7 +18,7 @@ const SLIDES = [
   },
   {
     bg: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=80',
-    badge: 'Pan India Services',
+    badge: 'Hyderabad Services',
     title: 'Designing Offices That Reflect Your Brand',
     highlight: 'Brand',
     desc: 'Your workspace is your identity. We design environments that communicate your vision and energize your team.',
@@ -35,30 +35,30 @@ const SERVICES = [
 ];
 
 const PORTFOLIO = [
-  { img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80', cat: 'Corporate', title: 'TechMahindra HQ', tall: true },
-  { img: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80', cat: 'Residential', title: 'Villa Serena' },
-  { img: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80', cat: 'Office', title: 'CloudSpaces' },
-  { img: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=80', cat: 'Healthcare', title: 'Apollo Wellness' },
-  { img: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80', cat: 'Residential', title: 'Sky Penthouse' },
+  { img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80', cat: 'Corporate', title: 'Ikeva', tall: true },
+  { img: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80', cat: 'Residential', title: 'Aparna' },
+  { img: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80', cat: 'Office', title: 'Center Point' },
+  { img: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=80', cat: 'Healthcare', title: 'PVCU' },
+  { img: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80', cat: 'Residential', title: 'Symbyont' },
 ];
 
 const TESTIMONIALS = [
   {
     text: 'Nidhi Interior consistently delivers extremely high quality finished projects within accepted deadlines. Their quality of execution can be attributed to their flexible approach, on-time delivery, and in-depth project coordination.',
     name: 'Rajiv Sharma',
-    role: 'Head Facilities — Wipro Ltd.',
+    role: 'Head Facilities — NPCI',
     initial: 'R',
   },
   {
     text: 'The quality of work, professionalism, time & cost management skills demonstrated by the team are worthy of commendation. Their proactive approach made it a pleasant experience.',
     name: 'Priya Mehtani',
-    role: 'Sr. Director, Real Estate — Google India',
+    role: 'Sr. Director, Real Estate — A+',
     initial: 'P',
   },
   {
     text: 'We are pleased with the quality and professionalism. Their highly effective project management and hard work guaranteed timely completion with all deliverables outstanding in their detail.',
     name: 'Arun Krishnaswamy',
-    role: 'Managing Director — HIL India',
+    role: 'Managing Director — Dallas Center',
     initial: 'A',
   },
 ];
@@ -129,7 +129,7 @@ export default function Home() {
         ))}
 
         <div className="hero-stats">
-          {[['500+', 'Projects'], ['24', 'Cities'], ['15+', 'Years'], ['90+', 'Team']].map(([num, label]) => (
+          {[['35', 'Projects'], ['1', 'City'], ['2+', 'Years'], ['45', 'Team']].map(([num, label]) => (
             <div key={label} className="hero-stat">
               <span className="num">{num}</span>
               <span className="label">{label}</span>
@@ -148,7 +148,7 @@ export default function Home() {
       <div className="marquee-strip">
         <div className="marquee-track">
           {[...Array(2)].map((_, rep) =>
-            ['Corporate Interiors', 'Office Fitout', 'Residential Design', 'MEP Services', 'Architectural Design', 'Modular Furniture', 'Healthcare Spaces', 'Pan India Services'].map((item, i) => (
+            ['Corporate Interiors', 'Office Fitout', 'Residential Design', 'MEP Services', 'Architectural Design', 'Modular Furniture', 'Healthcare Spaces', 'Hyderabad Services'].map((item, i) => (
               <div key={`${rep}-${i}`} className="marquee-item">
                 <span className="dot" />
                 {item}
@@ -193,7 +193,7 @@ export default function Home() {
                 alt="Our Studio"
               />
               <div className="about-image-badge">
-                <div className="big">15+</div>
+                <div className="big">2+</div>
                 <div className="small">Years of Excellence</div>
               </div>
             </div>
@@ -207,11 +207,11 @@ export default function Home() {
                 that nourish the soul.
               </p>
               <p>
-                Our 13+ years of experience and innovation help us create stunning corporate
-                offices and luxury residences across 24 cities in India.
+                Our 2+ years of experience and innovation help us create stunning corporate
+                offices and luxury residences in Hyderabad.
               </p>
               <div className="about-features">
-                {['Turnkey Delivery', 'Pan India Coverage', 'ISO Certified', 'On-Time Handover', '500+ Projects', '90+ Professionals'].map(f => (
+                {['Turnkey Delivery', 'Hyderabad Coverage', 'ISO Certified', 'On-Time Handover', '35 Projects', '45 Professionals'].map(f => (
                   <div key={f} className="about-feature">
                     <span className="check">✓</span>
                     <span>{f}</span>
@@ -283,7 +283,7 @@ export default function Home() {
             <h2 className="section-title">Trusted by Leading Brands</h2>
           </div>
           <div className="clients-logos">
-            {['Wipro', 'Google', 'Facebook', 'Zenq', 'Aveva', 'CGI', 'Compass', 'Vodafone'].map(c => (
+            {['Ikeva', 'Aparna', 'Center Point', 'PVCU', 'Symbyont', 'NPCI', 'Dallas Center', 'iLabs'].map(c => (
               <div key={c} className="client-logo">{c}</div>
             ))}
           </div>

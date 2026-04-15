@@ -2,18 +2,18 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const ALL_PROJECTS = [
-  { img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80', cat: 'Corporate', title: 'TechMahindra HQ', city: 'Hyderabad' },
-  { img: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80', cat: 'Residential', title: 'Villa Serena', city: 'Bengaluru' },
-  { img: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80', cat: 'Corporate', title: 'CloudSpaces', city: 'Mumbai' },
-  { img: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=80', cat: 'Healthcare', title: 'Apollo Wellness', city: 'Hyderabad' },
-  { img: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80', cat: 'Residential', title: 'Sky Penthouse', city: 'Pune' },
-  { img: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80', cat: 'Corporate', title: 'Infosys Campus', city: 'Chennai' },
-  { img: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80', cat: 'Retail', title: 'LuxeBoutique Store', city: 'Delhi' },
-  { img: 'https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80', cat: 'Corporate', title: 'Zenq Technologies', city: 'Hyderabad' },
-  { img: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80', cat: 'Residential', title: 'Urban Loft', city: 'Bengaluru' },
-  { img: 'https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?w=800&q=80', cat: 'Hospitality', title: 'The Grand Lobby', city: 'Hyderabad' },
-  { img: 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80', cat: 'Healthcare', title: 'MediCity Clinic', city: 'Mumbai' },
-  { img: 'https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=800&q=80', cat: 'Retail', title: 'Signature Showroom', city: 'Chennai' },
+  { img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80', cat: 'Corporate', title: 'Ikeva', city: 'Hyderabad' },
+  { img: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80', cat: 'Residential', title: 'Aparna', city: 'Hyderabad' },
+  { img: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80', cat: 'Corporate', title: 'Center Point', city: 'Hyderabad' },
+  { img: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=80', cat: 'Healthcare', title: 'PVCU', city: 'Hyderabad' },
+  { img: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80', cat: 'Residential', title: 'Symbyont', city: 'Hyderabad' },
+  { img: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80', cat: 'Corporate', title: 'NPCI', city: 'Hyderabad' },
+  { img: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80', cat: 'Retail', title: 'Dallas Center', city: 'Hyderabad' },
+  { img: 'https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80', cat: 'Corporate', title: 'iLabs', city: 'Hyderabad' },
+  { img: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80', cat: 'Residential', title: 'A+', city: 'Hyderabad' },
+  { img: 'https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?w=800&q=80', cat: 'Hospitality', title: 'Premier', city: 'Hyderabad' },
+  { img: 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80', cat: 'Healthcare', title: 'Energies', city: 'Hyderabad' },
+  { img: 'https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=800&q=80', cat: 'Retail', title: 'Fint', city: 'Hyderabad' },
 ];
 
 const FILTERS = ['All', 'Corporate', 'Residential', 'Healthcare', 'Retail', 'Hospitality'];
@@ -50,7 +50,7 @@ export default function Portfolio() {
             background: 'var(--light)',
             borderRadius: '16px'
           }}>
-            {[['500+', 'Projects Completed'], ['24', 'Cities'], ['15+', 'Years'], ['100%', 'Client Satisfaction']].map(([num, label]) => (
+            {[['35', 'Projects Completed'], ['1', 'City'], ['2+', 'Years'], ['100%', 'Client Satisfaction']].map(([num, label]) => (
               <div key={label} style={{ textAlign: 'center' }}>
                 <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '36px', fontWeight: 700, color: 'var(--accent)' }}>{num}</div>
                 <div style={{ fontSize: '13px', color: 'var(--muted)', fontWeight: 500 }}>{label}</div>
