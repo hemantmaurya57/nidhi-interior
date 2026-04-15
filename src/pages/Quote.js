@@ -88,7 +88,7 @@ export default function Quote() {
                     </div>
                     <div className="form-group">
                       <label>Phone Number *</label>
-                      <input type="tel" placeholder="+91 98765 43210" required value={form.phone} onChange={e => update('phone', e.target.value)} />
+                      <input type="tel" placeholder="+91  9849722294" required value={form.phone} onChange={e => update('phone', e.target.value)} />
                     </div>
                   </div>
                   <button type="button" className="btn btn-dark" style={{ width: '100%', justifyContent: 'center', padding: '16px' }}

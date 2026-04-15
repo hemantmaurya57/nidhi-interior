@@ -359,7 +359,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="cta-phone">
-            📞 +91 98765 43210
+            📞 +91 9849722294
           </div>
         </div>
       </section>

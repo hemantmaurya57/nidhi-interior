@@ -48,7 +48,7 @@ export default function Contact() {
                   </div>
                   <div className="form-group">
                     <label>Phone Number</label>
-                    <input type="tel" placeholder="+91 98765 43210" value={form.phone} onChange={e => setForm({ ...form, phone: e.target.value })} />
+                    <input type="tel" placeholder="+91 9849722294" value={form.phone} onChange={e => setForm({ ...form, phone: e.target.value })} />
                   </div>
                   <div className="form-group">
                     <label>Your Message *</label>
@@ -81,14 +81,14 @@ export default function Contact() {
                 <div className="info-icon">📞</div>
                 <div>
                   <h4>Call Us</h4>
-                  <p>+91 98765 43210<br />040-12345678 (Hyderabad)<br />080-98765432 (Bengaluru)</p>
+                  <p>+919849722294 <br /> 6307163606 (Hyderabad)<br />  </p>
                 </div>
               </div>
               <div className="info-card">
                 <div className="info-icon">✉️</div>
                 <div>
                   <h4>Email Us</h4>
-                  <p>info@nidhiinteriordecor.com<br />sales@nidhiinteriordecor.com</p>
+                  <p>dinesh.sharma01011996@gmail.com</p>
                 </div>
               </div>
               <div className="info-card">
